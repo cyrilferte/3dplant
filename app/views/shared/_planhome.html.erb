@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="card-deck-wrapper">
+    <div class="card-deck">
+ <% @plan.each do |plan| %>
+
+
+            <div class="card cardy">
+              <%= image_tag plan.img, class:"card-img-top cardy", alt:"Card image cap" %>
+              <div class="card-block"><%= plan.name %> <br>
+              <%= plan.author %></div>
+            </div>
+
+    <% end %>
+    </div>
+  </div>
+</div>
