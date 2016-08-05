@@ -4,10 +4,11 @@
  <% @plan.each do |plan| %>
 
 
-            <div class="card cardy">
-              <%= image_tag plan.img, class:"card-img-top cardy", alt:"Card image cap" %>
+            <div class="card card-long text-center">
+              <%= cl_image_tag plan.img.path, class:"card-img-top cardy", alt:"Card image cap" %>
               <div class="card-block"><%= plan.name %> <br>
-              <%= plan.author %></div>
+              <%= plan.author %><br>
+             <%= link_to "show", plan_path(plan), class:"btn btn-sm btn-warning"%></div>
             </div>
 
     <% end %>

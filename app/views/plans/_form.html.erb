@@ -1,7 +1,7 @@
 <%= simple_form_for @plan do |f| %>
       <%= f.input :name, as: :url, label: "which name?" %>
       <%= f.input :author, as: :text, label: "which author?" %>
-      <%= f.input :img, as: :url, label: "which img?" %>
-      <%= f.input :doc, as: :text, label: "which doc?" %>
+      <%= f.input :img, as: :attachinary %>
+       <%= f.input :doc, as: :url, label: "Download link Doc 3D",input_html: { value: 'http://' } %>
       <%= f.button :submit, "Add", class: "btn btn-primary" %>
-  <% end %>
+  <% end %>D

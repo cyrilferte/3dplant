@@ -7,7 +7,7 @@
       <div class="product">
  <%= link_to plan_path(plan) do %>
         
-            <img src="http://unsplash.it/300/200" alt="kudoz" class="product-image">
+          <%= cl_image_tag plan.img.path, class:"card-img-top card-index", alt:"Card image cap" %>
           
          <div class='product-body'>
             <h3 class="ttext"><%= plan.name %></h3>

@@ -20,9 +20,19 @@
   margin-bottom: 20px;
 }
 .cardy{
-max-width: 100px;
-  max-height: 100px;
+max-width: 200px;
+  max-height: 300px;
 
+}
+.card-long{
+max-width: 202px;
+
+
+}
+.card-index{
+   border-radius: 10px;
+  margin-right: 20px;
+  width: 175px;
 }
 .product {
   display: flex;
